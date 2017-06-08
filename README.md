@@ -1,6 +1,6 @@
 # nandi-app
 
-An Electron App to visualize sales data in real time using Google Maps API for Nandi Grp of Companies Edit Edit
+An Electron App to visualize sales data in real time using Google Maps API for Nandi Grp of Companies
 
 ## To Use
 

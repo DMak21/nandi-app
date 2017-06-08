@@ -108,3 +108,10 @@ module.exports = get_data;
 // col1 Sr No
 // col4 destination
 // col5 district
+
+// var from_date = '01/03/2015';
+// var to_date = '02/03/2015';
+// var fin_yr = '20172018';
+
+// var user = 'T0058';
+// var pass = 'T0058';
