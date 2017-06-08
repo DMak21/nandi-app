@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
 
-  <link rel="stylesheet" href="assets/css/variables.css">
-  <link rel="stylesheet" href="assets/css/nativize.css">
-  <link rel="stylesheet" href="assets/css/global.css">
-  <link rel="stylesheet" href="assets/css/nav.css">
+	<link rel="import" href="sections/heatmap.html">
 
-  <title>Nandi App</title>
+	<link rel="stylesheet" href="assets/css/variables.css">
+	<link rel="stylesheet" href="assets/css/nativize.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/nav.css">
+
+	<title>Nandi App</title>
 </head>
 <body>
-  <nav class="nav js-nav is-shown">
-    <header class="nav-header">
-      <h1 class="nav-title">Nandi App</h1>
-    </header>
-    <div class="nav-item u-category-windows">
-      <h5 class="nav-category">
-        <img class="nav-icon" src="assets/img/placeholder.svg"></img>
-        Maps
-      </h5>
-      <button type="button" id="button-heatmap" data-section="heatmap" class="nav-button">Heat Map</button>
-      <button type="button" id="button-other" data-section="other" class="nav-button">Some other map</button>
-    </div>
-    <div class="nav-item u-category-settings">
-      <h5 class="nav-category">
-        <img class="nav-icon" src="assets/img/cogwheel.svg"></img>
-        Settings
-      </h5>
-      <button type="button" id="button-setting1" data-section="setting1" class="nav-button">Some Setting</button>
-      <button type="button" id="button-setting2" data-section="setting2" class="nav-button">Some other setting</button>
-    </div>
-  </nav>
+	<nav class="nav js-nav is-shown">
+		<header class="nav-header">
+			<h1 class="nav-title">Nandi App</h1>
+		</header>
+		<div class="nav-item u-category-windows">
+			<h5 class="nav-category">
+				<img class="nav-icon" src="assets/img/placeholder.svg"></img>
+				Maps
+			</h5>
+			<button type="button" id="button-heatmap" data-section="heatmap" class="nav-button">Heat Map</button>
+			<button type="button" id="button-other" data-section="other" class="nav-button">Some other map</button>
+		</div>
+		<div class="nav-item u-category-settings">
+			<h5 class="nav-category">
+				<img class="nav-icon" src="assets/img/cogwheel.svg"></img>
+				Settings
+			</h5>
+			<button type="button" id="button-setting1" data-section="setting1" class="nav-button">Some Setting</button>
+			<button type="button" id="button-setting2" data-section="setting2" class="nav-button">Some other setting</button>
+		</div>
 
-  <main class="content js-content"></main>
+		<footer class="nav-footer">
+			<button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
+			<a class="nav-footer-logo" href="https://github.com" aria-label="Homepage">
+				LOL
+			</a>
+		</footer>
+	</nav>
+
+	<main class="content js-content is-shown"></main>
 </body>
 
 <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
-  </html>
+		require('./assets/imports.js');
+		// You can also require other files to run in this process
+		require('./renderer.js');
+	</script>
+	</html>
