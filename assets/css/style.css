@@ -1,0 +1,126 @@
+body {
+  background: #fff;
+  color: #666666;
+  font-size: 14px;
+}
+
+.form-module {
+  position: relative;
+  background: #ffffff;
+  max-width: 320px;
+  width: 100%;
+  border-top: 5px solid #33b5e5;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.form-module .form {
+  display: none;
+  padding: 40px;
+}
+.form-module .form:nth-child(1) {
+  display: block;
+}
+.form-module input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-wieght: 400;
+}
+.form-module input:focus {
+  border: 1px solid #33b5e5;
+  color: #333333;
+}
+.form-module button {
+  cursor: pointer;
+  background: #33b5e5;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #ffffff;
+}
+.form-module button:hover {
+  background: #178ab4;
+}
+.form-module .cta {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+}
+.form-module .cta a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.date {
+  padding-top: 3px;
+  padding-bottom: 4px;
+  padding-right: 0px;
+  padding-left: 3px;
+  font-family: inherit;
+  background-color: white;
+  width: 200px;
+  border-color: #444;
+  border-width: 1px;
+  margin-left: 15px;
+}
+
+.dropdown{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 5px;
+  background-color: white;
+  width: 200px;
+  border-color: #444;
+  border-width: 1px;
+  margin-left: 15px;
+}
+
+.title_heatmap{
+  margin: 12px 0px 3px 0px;
+  color: black;
+  font-weight: 600;
+}
+
+.form_heatmap {
+  display: inline-block;
+  padding: 20px 40px 20px 40px;
+  border: 3px solid #bbb;
+  background-color: white;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.submit {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 15px
+}
+
+.cement_type{
+  margin-left: 15px;
+}
+.dis_pen{
+  margin-left: 15px;
+}
+
+main.content {
+  background-image: url("../img/b.jpg");
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.form1{
+  text-align: center;
+}
+
