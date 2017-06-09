@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 
 	<link rel="import" href="sections/heatmap.html">
+	<link rel="import" href="sections/index1.html">
+	<link rel="import" href="sections/index3.html">
 
 	<link rel="stylesheet" href="assets/css/variables.css">
 	<link rel="stylesheet" href="assets/css/nativize.css">
@@ -11,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/global.css">
 	<link rel="stylesheet" href="assets/css/nav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/section.css">
 
 	<title>Nandi App</title>
 </head>
@@ -24,8 +27,9 @@
 				<img class="nav-icon" src="assets/img/placeholder.svg"></img>
 				Maps
 			</h5>
+			<button type="button" id="button-login" data-section="login" class="nav-button">Login</button>
+			<button type="button" id="button-heatmap_input" data-section="heatmap_input" class="nav-button">Heat Map Input</button>
 			<button type="button" id="button-heatmap" data-section="heatmap" class="nav-button">Heat Map</button>
-			<button type="button" id="button-other" data-section="other" class="nav-button">Some other map</button>
 		</div>
 		<div class="nav-item u-category-settings">
 			<h5 class="nav-category">
@@ -49,6 +53,7 @@
 
 <script>
 		require('./assets/imports.js');
+		require('./assets/nav.js')
 		// You can also require other files to run in this process
 		require('./renderer.js');
 	</script>

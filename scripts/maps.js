@@ -1,6 +1,6 @@
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('heatmap'), {
     zoom: 10,
     center: {lat: 15.500631, lng: 78.210203},
     mapTypeId: 'terrain'

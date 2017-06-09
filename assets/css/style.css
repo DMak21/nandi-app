@@ -9,9 +9,9 @@ body {
   background: #ffffff;
   max-width: 320px;
   width: 100%;
-  border-top: 5px solid #33b5e5;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+      border: 1px solid #000;
   margin-top: 10%;
 }
 
@@ -32,21 +32,17 @@ body {
   box-sizing: border-box;
   font-wieght: 400;
 }
-.form-module input:focus {
-  border: 1px solid #33b5e5;
+input:focus, select:focus {
+  border: 1px solid #666;
   color: #333333;
 }
 .form-module button {
-  cursor: pointer;
-  background: #33b5e5;
   width: 100%;
-  border: 0;
-  padding: 10px 15px;
-  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 15px
 }
-.form-module button:hover {
-  background: #178ab4;
-}
+
 .form-module .cta {
   background: #f2f2f2;
   width: 100%;
@@ -69,8 +65,8 @@ body {
   font-family: inherit;
   background-color: white;
   width: 200px;
-  border-color: #444;
-  border-width: 1px;
+    border: 1px solid #d9d9d9;
+    outline: none;
   margin-left: 15px;
 }
 
@@ -81,8 +77,8 @@ body {
   padding-left: 5px;
   background-color: white;
   width: 200px;
-  border-color: #444;
-  border-width: 1px;
+    border: 1px solid #d9d9d9;
+    outline: none;
   margin-left: 15px;
 }
 
@@ -95,7 +91,7 @@ body {
 .form_heatmap {
   display: inline-block;
   padding: 20px 40px 20px 40px;
-  border: 3px solid #bbb;
+  border: 1px solid #000;
   background-color: white;
   text-align: left;
   margin-top: 40px;
@@ -117,10 +113,12 @@ body {
 
 main.content {
   background-image: url("../img/b.jpg");
-  overflow-x: hidden;
-  overflow-y: auto;
 }
-.form1{
+
+.form_wrap{
   text-align: center;
 }
 
+#heatmap {
+  height: 100%; width: 100%;
+}
