@@ -1,4 +1,4 @@
-# nandi-app
+# nandi-app (In Progress)
 
 An Electron App to visualize sales data in real time using Google Maps API for Nandi Grp of Companies
 
@@ -16,6 +16,14 @@ npm install
 # Run the app
 npm start
 ```
+
+## Screenshots
+
+![alt-tag](screenshots/1.jpg)
+
+![alt-tag](screenshots/2.jpg)
+
+![alt-tag](screenshots/3.jpg)
 
 ## License
 
