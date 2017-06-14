@@ -122,3 +122,23 @@ main.content {
 #heatmap {
   height: 100%; width: 100%;
 }
+
+#sign-out{
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;  
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--color-accent);
+
+  /* Hide */
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#sign-out .is-shown {
+  visibility: visible;
+  opacity: 1;
+}
