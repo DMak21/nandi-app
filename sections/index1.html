@@ -1,21 +1,29 @@
 <template class="template">
-  <div id="login" class="section form-module">
-    <div class="form">
-      <h2 style="font-variant: small-caps;">Login to your account</h2>
-      <form>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button>Login</button>
-      </form>
-    </div>
+  <div id="login" class="section">
+  <div id="form" class="form-module" >
     <div class="form">
       <h2>Log In</h2>
       <form>
         <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button id="login_btn">Log In</button>
+        <input  type="password" id="password" placeholder="Password">
+        <button onclick="login()" type="button" id="login_btn">Log In</button>
       </form>
     </div>
     <div class="cta"><a href="#">Forgot your password?</a></div>
   </div>
+  <div id="loader" style="display:none;" class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="logout" style="display:none;" >
+    <h2 class="login">You have successfully signed in</h2>
+    <a class="login" onclick="showLogin()">Sign Out</a>
+  </div>
+  <div id="err" style="display:none;" >
+    <h2 class="login" id="err_txt"></h2>
+    <a class="login" onclick="showLogin()">Try Again</a>
+  </div>
+  </div>
 </template>
+

@@ -4,7 +4,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 // Geocoding API for converting text address to latitudes and longitudes
 const googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyCw5oODSMsqomxWJuBzXebBMfaOYdFo64c'
+  key: 'AIzaSyBhPa8nt82MpL2KMhWdU5-4Xy9r_UZ5PSQ'
 });
 
 let cookie;
@@ -81,7 +81,7 @@ function get_data(from_date, to_date, user, pass, callback) {
 			})
 			.map((i, element) => ({
 				id: $(element).find('td:nth-of-type(1)').text().trim(),
-				address: $(element).find('td:nth-of-type(4)').text().trim(),
+				destination: $(element).find('td:nth-of-type(4)').text().trim(),
 				opc43_d: $(element).find('td:nth-of-type(6)').text().trim(),
 				opc53_d: $(element).find('td:nth-of-type(7)').text().trim(),
 				ppc_d: $(element).find('td:nth-of-type(8)').text().trim(),
@@ -102,7 +102,7 @@ function get_data(from_date, to_date, user, pass, callback) {
 	    		let requests = res.map(function(json_obj){
 					return new Promise(function (resolve, reject) {
 						googleMapsClient.geocode({
-							address: json_obj.address
+							address: json_obj.destination
 						}, function(err, response) {
 							if (!err) {
 								json_obj.address = response.json.results[0].geometry.location;
@@ -125,6 +125,7 @@ function get_data(from_date, to_date, user, pass, callback) {
 					callback(null);
 				});
 			}
+
 		}
 		else {
 			console.log(error);
