@@ -7,6 +7,7 @@
 	<link rel="import" href="sections/index1.html">
 	<link rel="import" href="sections/index2.html">
 	<link rel="import" href="sections/index3.html">
+	<!-- <link rel="import" href="sections/secret.html"> -->
 
 	<link rel="stylesheet" href="assets/css/variables.css">
 	<link rel="stylesheet" href="assets/css/nativize.css">
@@ -15,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/nav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/section.css">
+	<!-- <link rel="stylesheet" href="assets/css/secret.css"> -->
 
 	<title>Nandi App</title>
 </head>
@@ -45,9 +47,9 @@
 
 		<footer class="nav-footer">
 			<button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
-			<a class="nav-footer-logo">
-				The App was developed by students of BITS Pilani during the time of Practice School
-			</a>
+			<p class="nav-footer-logo">
+				The App was developed by students of <span onclick="secret()" id="secret">BITS</span> Pilani during the time of Practice School
+			</p>
 		</footer>
 	</nav>
 
@@ -55,6 +57,8 @@
 </body>
 
 <script type="text/javascript" src="./assets/login.js"></script>
+<script type="text/javascript" src="./assets/js/heatmap_input.js"></script>
+<!-- <script type="text/javascript" src="./assets/js/secret.js"></script> -->
 
 <script>
 		require('./assets/imports.js');

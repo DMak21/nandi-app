@@ -37,6 +37,7 @@ function login() {
     }
   })
 }
+
 function showLoader() {
   document.getElementById("loader").style.display = "block";
   document.getElementById("logout").style.display = "none";

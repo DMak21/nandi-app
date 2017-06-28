@@ -119,7 +119,7 @@
   height: calc(88px / 6.5);
 }
 
-.nav-footer a {
+.nav-footer a, #secret {
   outline: none;
 }
 

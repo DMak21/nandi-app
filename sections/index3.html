@@ -1,11 +1,11 @@
 <template class="template">
-<div id="heatmap_input" class="section form_wrap">
+	<div id="heatmap_input" class="section form_wrap">
 		<div class="form_heatmap">
 			<h2 style="font-variant: small-caps;">Get Heat Map:</h2>
 			<form>
 				<h4 class="title_heatmap"> Financial year </h4>
-				<select id="fin_yr" class="dropdown">
-					<option value="0">Select</option>
+				<select id="fin_yr" class="dropdown" onchange="set_date()">
+					<option value=" ">Select</option>
 					<option value="2012">2012-2013</option>
 					<option value="2013">2013-2014</option>
 					<option value="2014">2014-2015</option>
@@ -14,32 +14,32 @@
 					<option value="2017">2017-2018</option>
 				</select>
 				<h4 class="title_heatmap">Period</h4>
-				<select id="prd" class="dropdown">
-					<option value="0">Select</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-					<option value="1">January</option>
-					<option value="2">Febraury</option>
-					<option value="3">March</option>
-					<option value="4_6">1st Quarter</option>
-					<option value="7_9">2nd Quarter</option>
+				<select id="prd" class="dropdown" onchange="set_date()">
+					<option value=" ">Select</option>
+					<option value="04_04">April</option>
+					<option value="05_05">May</option>
+					<option value="06_06">June</option>
+					<option value="07_07">July</option>
+					<option value="08_08">August</option>
+					<option value="09_09">September</option>
+					<option value="10_10">October</option>
+					<option value="11_11">November</option>
+					<option value="12_12">December</option>
+					<option value="01_01">January</option>
+					<option value="02_02">Febraury</option>
+					<option value="03_03">March</option>
+					<option value="04_06">1st Quarter</option>
+					<option value="07_09">2nd Quarter</option>
 					<option value="10_12">3rd Quarter</option>
-					<option value="1_3">4rth Quarter</option>
-					<option value="4_9">1st half</option>
-					<option value="10_3">2nd half</option>
-					<option value="4_3">Annual</option>
+					<option value="01_03">4rth Quarter</option>
+					<option value="04_09">1st half</option>
+					<option value="10_03">2nd half</option>
+					<option value="04_03">Annual</option>
 				</select>
 				<h4 class="title_heatmap">From date</h4>
-				<input type="date" class="date">
+				<input type="date" class="date" id="from">
 				<h4 class="title_heatmap">To date</h4>
-				<input type="date" class="date">
+				<input type="date" class="date" id="to">
 				<h4 class="title_heatmap">Cement Type</h4>
 				<div>
 					<input type="checkbox" class="cement_type" checked>
@@ -61,9 +61,9 @@
 					<label for="a" style="display: inline; margin: 0px;">
 						PSC
 					</label>
-					</div>
-					<h4 class="title_heatmap">Dispached/Pending</h4>
-					<div>
+				</div>
+				<h4 class="title_heatmap">Dispached/Pending</h4>
+				<div>
 					<input type="checkbox" class="dis_pen" checked>
 					<label for="a" style="display: inline; margin: 0px;">
 						Dispached
@@ -77,19 +77,5 @@
 				<button id="heatmap_input-btn" class="submit">Submit</button>
 			</form>
 		</div>
-		</div>
+	</div>
 </template>
-
-<script type="text/javascript">
-	function set_date() {
-	    /*
-
-	    fin_yr - document.getElementById("fin_yr").value
-
-	    prd - document.getElementById("prd").value.split("_")
-		
-
-		*/
-	}
-
-</script>
