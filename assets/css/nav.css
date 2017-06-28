@@ -17,9 +17,10 @@
 
 .nav-header {
   position: relative;
-  padding: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-border);
+  padding: 10px 0 5px 0;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 15px;
 }
 
 .nav-title {
@@ -34,18 +35,23 @@
   color: var(--color-strong);
 }
 
-.nav-header-icon {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 1.5rem; /* magic */
-  right: 1.75rem; /* magic */
+.nav-header-nandi-txt {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 220px;
+  height: auto;
 }
 
-
+.nav-header-nandi-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4px;
+}
 
 .nav-item {
-  padding: .5em 0;
+  padding: .7em 0;
 }
 
 .nav-icon {
@@ -53,6 +59,7 @@
   height: 16px;
   vertical-align: top;
   margin-right: .25rem;
+  fill: red;
 }
 
 .nav-category {
