@@ -18,16 +18,16 @@
 // var Datastore = require('nedb')
 // var db = new Datastore({filename: '../database/coordinates.db', autoload: true});
 
-var manipulate_data = require('./manipulated_data');
+var manipulate_data = require("./manipulated_data");
 
-var user = 'T0058';
-var pass = 'T0058';
+var user = "T0058";
+var pass = "T0058";
 
-var from_date = '01/03/2015';
-var to_date = '02/03/2015';
+var from_date = "01/03/2015";
+var to_date = "02/03/2015";
 
-var dis_pen = '3';
-var cem_type = '15';
+var dis_pen = "3";
+var cem_type = "15";
 
 manipulate_data(from_date, to_date, user, pass, dis_pen, cem_type, function(res) {
 	console.log(JSON.stringify(res, null, 2));
@@ -50,7 +50,7 @@ manipulate_data(from_date, to_date, user, pass, dis_pen, cem_type, function(res)
 // 			console.log(doc)
 // 		})
 // 	});
-})
+});
 
 
 

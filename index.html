@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 
-	<!-- <link rel="import" href="sections/heatmap.html"> -->
+	<link rel="import" href="sections/heatmap.html">
 	<link rel="import" href="sections/index1.html">
 	<link rel="import" href="sections/index2.html">
 	<link rel="import" href="sections/index3.html">
-	<!-- <link rel="import" href="sections/secret.html"> -->
 
 	<link rel="stylesheet" href="assets/css/variables.css">
 	<link rel="stylesheet" href="assets/css/nativize.css">
@@ -16,7 +15,6 @@
 	<link rel="stylesheet" href="assets/css/nav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/section.css">
-	<!-- <link rel="stylesheet" href="assets/css/secret.css"> -->
 
 	<title>Nandi App</title>
 </head>
@@ -30,14 +28,14 @@
 		</header>
 		<div class="nav-item u-category-menu">
 			<h5 class="nav-category">
-				<img class="nav-icon" src="assets/svg/LOGIN2.svg"></img>
+				<img class="nav-icon" src="assets/svg/001-login.svg"></img>
 				Login
 			</h5>
 			<button type="button" id="button-login" data-section="login" class="nav-button">Login</button>
 		</div>
 		<div class="nav-item u-category-windows">
 			<h5 class="nav-category">
-				<img class="nav-icon" src="assets/svg/MAP1.svg"></img>
+				<img class="nav-icon" src="assets/svg/002-map.svg"></img>
 				Heatmap
 			</h5>
 			<button type="button" id="button-heatmap_input" data-section="heatmap_input" class="nav-button">Input</button>
@@ -58,7 +56,9 @@
 
 <script type="text/javascript" src="./assets/login.js"></script>
 <script type="text/javascript" src="./assets/js/heatmap_input.js"></script>
-<!-- <script type="text/javascript" src="./assets/js/secret.js"></script> -->
+<script type="text/javascript" src="./assets/js/heatmap.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUHbJKpynXUhTeN0LVZjb6fRuqebocB2k&libraries=visualization&callback=initMap"></script>
 
 <script>
 		require('./assets/imports.js');
