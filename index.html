@@ -3,10 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 
-	<link rel="import" href="sections/heatmap.html">
-	<link rel="import" href="sections/index1.html">
-	<link rel="import" href="sections/index2.html">
-	<link rel="import" href="sections/index3.html">
+	<link rel="import" href="sections/login.html">
+	<link rel="import" href="sections/heatmap_input.html">
+	<link rel="import" href="sections/heatmap_result.html">
 
 	<link rel="stylesheet" href="assets/css/variables.css">
 	<link rel="stylesheet" href="assets/css/nativize.css">
@@ -41,6 +40,9 @@
 			<button type="button" id="button-heatmap_input" data-section="heatmap_input" class="nav-button">Input</button>
 			<button type="button" id="button-heatmap" data-section="heatmap" class="nav-button">Result</button>
 		</div>
+		<div style="height: 20px; margin-top: 1rem; background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff);">
+			
+		</div>
 		
 
 		<footer class="nav-footer">
@@ -53,17 +55,17 @@
 
 	<main class="content js-content is-shown"></main>
 </body>
-
+<script>
+require('./assets/imports.js');
+require('./assets/nav.js');
+// You can also require other files to run in this process
+require('./renderer.js');
+</script>
+<script type="text/javascript" src="./assets/js/heatmap.js"></script>
 <script type="text/javascript" src="./assets/login.js"></script>
 <script type="text/javascript" src="./assets/js/heatmap_input.js"></script>
-<script type="text/javascript" src="./assets/js/heatmap.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUHbJKpynXUhTeN0LVZjb6fRuqebocB2k&libraries=visualization&callback=initMap"></script>
+<script type="text/javascript" src="./assets/js/heatmap_create.js"></script>
 
-<script>
-		require('./assets/imports.js');
-		require('./assets/nav.js')
-		// You can also require other files to run in this process
-		require('./renderer.js');
-	</script>
-	</html>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Hwdql_NQZJhdV1u5V6syNsRUHVtCFWM&callback=initMap"></script>
+</html>

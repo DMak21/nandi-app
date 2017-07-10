@@ -42,39 +42,39 @@
 				<input type="date" class="date" id="to">
 				<h4 class="title_heatmap">Cement Type</h4>
 				<div>
-					<input type="checkbox" class="cement_type" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="cement_type" checked id='c_1'>
+					<label style="display: inline; margin: 0px;" >
 						OPC 43 grade
 					</label>
 					<br>
-					<input type="checkbox" class="cement_type" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="cement_type" checked id='c_2'>
+					<label  style="display: inline; margin: 0px;" >
 						OPC 53 grade
 					</label>
 					<br>
-					<input type="checkbox" class="cement_type" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="cement_type" checked id='c_4'>
+					<label  style="display: inline; margin: 0px;" >
 						PPC
 					</label>
 					<br>
-					<input type="checkbox" class="cement_type" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="cement_type" checked id='c_8'>
+					<label style="display: inline; margin: 0px;" >
 						PSC
 					</label>
 				</div>
 				<h4 class="title_heatmap">Dispached/Pending</h4>
 				<div>
-					<input type="checkbox" class="dis_pen" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="dis_pen" checked id='dp_1'>
+					<label for="a" style="display: inline; margin: 0px;" >
 						Dispached
 					</label>
 					<br>
-					<input type="checkbox" class="dis_pen" checked>
-					<label for="a" style="display: inline; margin: 0px;">
+					<input type="checkbox" class="dis_pen" checked id='dp_2'>
+					<label for="a" style="display: inline; margin: 0px;" >
 						Pending
 					</label>
 				</div>
-				<button id="heatmap_input-btn" class="submit">Submit</button>
+				<button id="heatmap_input-btn" class="submit" onclick="create_heatmap()" type='button'>Submit</button>
 			</form>
 		</div>
 	</div>

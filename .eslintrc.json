@@ -5,6 +5,10 @@
         "node": true
     },
     "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 8
+    },
     "rules": {
         "indent": [
             "error",
@@ -16,14 +20,14 @@
         ],
         "quotes": [
             "error",
-            "double"
+            "single"
         ],
         "semi": [
             "error",
             "always"
         ],
-        "no-console": 0,
-        "no-unused-vars": 0,
+        // "no-unused-vars": 0,
+        // "no-console": 0,
         "no-undef": 0
     }
 }

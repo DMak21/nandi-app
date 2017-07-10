@@ -1,69 +1,67 @@
-// const manipulated_data = require('./scripts/manipulated_data')
+const manipulate_data = require('./scripts/manipulate_data');
+const get_data = require('./scripts/get_data');
+const limit_data = require('./scripts/reduce_array');
+const local_geocode = require('./scripts/local_geocode');
 
-let map, heatmap;
+const Rainbow = require('rainbowvis.js');
 
-// var user = 'T0058';
-// var pass = 'T0058';
-
-// var from_date = '01/03/2015';
-// var to_date = '02/03/2015';
-
-// var dis_pen = '3';
-// var cem_type = '15';
-
-
+let map;
+let gradient = new Rainbow();
 
 function initMap() {
-	map = new google.maps.Map(document.getElementById("heatmap"), {
+	map = new google.maps.Map(document.getElementById('heatmap'), {
 		zoom: 8,
 		center: new google.maps.LatLng(14.681888, 77.600591),
-		mapTypeId: "terrain"
+		mapTypeId: 'terrain'
 	});
-
-	heatmap = new google.maps.visualization.HeatmapLayer({
-		data: getPoints(),
-		map: map
-	});
-
-	var gradient = [
-		"rgba(0, 255, 255, 0)",
-		"rgba(0, 255, 255, 1)",
-		"rgba(0, 191, 255, 1)",
-		"rgba(0, 127, 255, 1)",
-		"rgba(0, 63, 255, 1)",
-		"rgba(0, 0, 255, 1)",
-		"rgba(0, 0, 223, 1)",
-		"rgba(0, 0, 191, 1)",
-		"rgba(0, 0, 159, 1)",
-		"rgba(0, 0, 127, 1)",
-		"rgba(63, 0, 91, 1)",
-		"rgba(127, 0, 63, 1)",
-		"rgba(191, 0, 31, 1)",
-		"rgba(255, 0, 0, 1)"
-	];
-	heatmap.set("gradient", gradient);
-
-	heatmap.set("radius",30);
 }
 
+async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
+	let data = await get_data(user, pass, from_date, to_date);
+	console.log(data);
+	let data2 = manipulate_data(data, cem_type, dis_pen);
+	console.log(data2);
+	let data3 = limit_data(data2);
+	console.log(data3);
+	let data4 = await local_geocode(data3);
+	console.log(data4);
+	let max = Math.max.apply(Math,data4.map(function(b){return b.weight;}));
+	let min = Math.min.apply(Math,data4.map(function(b){return b.weight;}));
+	for (var i = data4.length - 1; i >= 0; i--) {
+		let weight = data4[i].weight;
+		let address_latlng = data4[i].address_latlng;
+		let address_txt = data4[i].address_txt;
+		let infowindow = new google.maps.InfoWindow({
+			content: address_txt + ' - ' + weight
+		});
 
-function getPoints() {
-	// manipulated_data(from_date, to_date, user, pass, dis_pen, cem_type, function(res) {
-	//   let b = res.map(function (obj) {
-	//     return ({location: new google.maps.LatLng(obj.coordinates.lat, obj.coordinates.lng), weight: obj.weight})
-	//   })
+		let marker = new google.maps.Marker({
+			position: new google.maps.LatLng(address_latlng.lat, address_latlng.lng),
+			// position: new google.maps.LatLng(14.681888, 77.600591),
+			icon: getCircle(weight, max, min),
+			label: {
+				fontWeight: '600',
+				text: weight.toString(),
+				color: '#000'
+			},
+			map: map
+		});
 
-	//   return b;
-	// })
-
-
-	return [
-		{location: new google.maps.LatLng(13.217176, 79.1003289), weight: 100},
-		{location: new google.maps.LatLng(14.1130272, 78.1605586), weight: 200},
-		{location: new google.maps.LatLng(13.1990798,78.7469436), weight: 30},
-		{location: new google.maps.LatLng(11.2587531,75.78041), weight: 40},
-		{location: new google.maps.LatLng(14.7491864, 78.5531577), weight: 50},
-		{location: new google.maps.LatLng(9.9816358,76.2998842), weight: 60},
-		{location: new google.maps.LatLng(14.696869, 76.854650), weight: 70},
-	];  
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		});
+	}
+}
+function getCircle(magnitude, max, min) {
+	gradient.setNumberRange(min, max);
+	// gradient.setSpectrum('red', 'blue');
+	return {
+		path: google.maps.SymbolPath.CIRCLE,
+		fillColor: '#' + gradient.colorAt(magnitude),
+		fillOpacity: .8,
+		scale: 15,
+		// Math.round((magnitude - 1)/(max - 1) * 25)
+		strokeColor: 'white',
+		strokeWeight: .5
+	};
 }

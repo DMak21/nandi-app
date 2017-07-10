@@ -109,7 +109,7 @@ input:focus, select:focus {
 }
 
 main.content {
-  background-image: url("../img/b.jpg");
+  background-image: url("../img/background.jpg");
 }
 
 .form_wrap{

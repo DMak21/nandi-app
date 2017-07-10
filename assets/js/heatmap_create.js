@@ -2,40 +2,58 @@
 
 function create_heatmap() {
 	// Check if logged in
-	if (document.getElementById("logout").style.display == "none") {
-		
-		// hideAllSectionsAndDeselectButtons()
-	
-		document.getElementById("button-login").classList.add("is-selected");
-		document.getElementById("button-heatmap_input").classList.remove("is-selected");
-		
-		document.getElementById("heatmap_input").classList.remove("is-shown");
-		document.getElementById("login").classList.add("is-shown");
+	if (document.getElementById('logout').style.display == 'none') {
+
+		document.getElementById('button-login').classList.add('is-selected');
+		document.getElementById('button-heatmap_input').classList.remove('is-selected');
+
+		document.getElementById('heatmap_input').classList.remove('is-shown');
+		document.getElementById('login').classList.add('is-shown');
 		return;
 	}
+	else if(document.getElementById('from').value && document.getElementById('to').value) {
 
+		document.getElementById('heatmap_input').classList.remove('is-shown');
+		document.getElementById('heatmap').classList.add('is-shown');
 
+		document.getElementById('button-heatmap').classList.add('is-selected');
+		document.getElementById('button-heatmap_input').classList.remove('is-selected');
 
-	// Get username and password
-	// const username = document.getElementById('username');
-	// const password = document.getElementById('password');
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
 
-	// // Get from_date and to_date
-	// const from = document.getElementById('from').value.split('-');
-	// const to = document.getElementById('to').value.split('-');
+		var from = document.getElementById('from').value.split('-');
+		var to = document.getElementById('to').value.split('-');
+		var from_date = from[2] + '/' + from[1] + '/' + from[0];
+		var to_date = to[2] + '/' + to[1] + '/' + to[0];
+		
+		var dis_pen = 0;
+		var cem_type = 0;
 
-	// const from_date = from[2] + '/' + from[1] + '/' + from[0];
-	// const to_date = to[2] + '/' + to[1] + '/' + to[0];
+		if(document.getElementById('c_1').checked){
+			cem_type += 1;
+		}
+		if(document.getElementById('c_2').checked){
+			cem_type += 2;
+		}
+		if(document.getElementById('c_4').checked){
+			cem_type += 4;
+		}
+		if(document.getElementById('c_8').checked){
+			cem_type += 8;
+		}
+		if(document.getElementById('dp_1').checked){
+			dis_pen += 1;
+		}
+		if(document.getElementById('dp_2').checked){
+			dis_pen += 2;
+		}
 
-	document.getElementById("button-heatmap_input").classList.remove("is-selected");
-	document.getElementById("heatmap_input").classList.remove("is-shown");
-	document.getElementById("button-heatmap").classList.add("is-selected");
-	document.getElementById("heatmap").classList.add("is-shown");
-
-
-
-	console.log("A");
-
-	// Call function
+		console.log(username,password,from_date,to_date,cem_type,dis_pen);
+		add_markers(username,password,from_date,to_date,cem_type,dis_pen);
+	}
+	else{
+		// 
+	}
 
 }
