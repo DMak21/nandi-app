@@ -7,8 +7,12 @@ const Rainbow = require('rainbowvis.js');
 
 let map;
 let gradient = new Rainbow();
+let infowindow, markers;
 
 function initMap() {
+	markers = [];
+	infowindow = new google.maps.InfoWindow();
+
 	map = new google.maps.Map(document.getElementById('heatmap'), {
 		zoom: 8,
 		center: new google.maps.LatLng(14.681888, 77.600591),
@@ -16,7 +20,40 @@ function initMap() {
 	});
 }
 
+function add_marker(address_txt, address_latlng, weight, max, min) {
+	let marker = new google.maps.Marker({
+		position: new google.maps.LatLng(address_latlng.lat, address_latlng.lng),
+		// position: new google.maps.LatLng(14.681888, 77.600591),
+		icon: getCircle(weight, max, min),
+		label: {
+			fontWeight: '600',
+			text: weight.toString(),
+			color: '#000'
+		},
+		map: map
+	});
+	google.maps.event.addListener(marker, 'click', infoCallback(marker, address_txt, weight));
+	markers.push(marker);
+}
+
+function infoCallback(marker, address_txt, weight) {
+	return function() {
+		infowindow.close();
+
+		infowindow.setContent(address_txt + ' - ' + weight);
+		infowindow.open(map, marker);
+	};
+}
+
+function remove_all_markers() {
+	for (var i = 0; i < markers.length; i++) {
+		markers[i].setMap(null);
+	}
+	markers = [];
+}
+
 async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
+	remove_all_markers();
 	let data = await get_data(user, pass, from_date, to_date);
 	console.log(data);
 	let data2 = manipulate_data(data, cem_type, dis_pen);
@@ -27,29 +64,15 @@ async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
 	console.log(data4);
 	let max = Math.max.apply(Math,data4.map(function(b){return b.weight;}));
 	let min = Math.min.apply(Math,data4.map(function(b){return b.weight;}));
+
 	for (var i = data4.length - 1; i >= 0; i--) {
 		let weight = data4[i].weight;
 		let address_latlng = data4[i].address_latlng;
 		let address_txt = data4[i].address_txt;
-		let infowindow = new google.maps.InfoWindow({
-			content: address_txt + ' - ' + weight
-		});
 
-		let marker = new google.maps.Marker({
-			position: new google.maps.LatLng(address_latlng.lat, address_latlng.lng),
-			// position: new google.maps.LatLng(14.681888, 77.600591),
-			icon: getCircle(weight, max, min),
-			label: {
-				fontWeight: '600',
-				text: weight.toString(),
-				color: '#000'
-			},
-			map: map
-		});
-
-		marker.addListener('click', function() {
-			infowindow.open(map, marker);
-		});
+		if (weight != 0) {
+			add_marker(address_txt, address_latlng, weight, max, min);
+		}
 	}
 }
 function getCircle(magnitude, max, min) {
