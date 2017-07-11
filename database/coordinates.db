@@ -165,9 +165,11 @@
 {"address_txt":"SRIRANGARAJAPURAM","address_latlng":{"lat":14.1670227,"lng":79.0899245},"_id":"h0v9Zo1URJTlD9L1"}
 {"address_txt":"KUNNAMKULAM","address_latlng":{"lat":10.6515875,"lng":76.07109950000002},"_id":"hc6XH5PtieuIoMtS"}
 {"address_txt":"MAHABOOB NAGAR","address_latlng":{"lat":16.7375089,"lng":78.0081221},"_id":"hkHhHX1RKUDaOpAe"}
+{"address_txt":"MADURAI","address_latlng":{"lat":9.9252007,"lng":78.1197754},"_id":"huifpAOKayVW63CO"}
 {"address_txt":"KONDAPURAM","address_latlng":{"lat":14.7757134,"lng":78.1949157},"_id":"i4fwEJDTRwy7PB3w"}
 {"address_txt":"PAMULAPADU","address_latlng":{"lat":15.8395598,"lng":78.4908221},"_id":"i92D2b24xDBg0d7u"}
 {"address_txt":"GUDUR","address_latlng":{"lat":14.1463188,"lng":79.8503887},"_id":"iIp9f3xlXiFODB54"}
+{"address_txt":"ARDHAVEEDU","address_latlng":{"lat":15.6746632,"lng":78.95993469999999},"_id":"ieOONh27zAZQhnwX"}
 {"address_txt":"GOPAVARAM","address_latlng":{"lat":16.8180698,"lng":80.96914749999999},"_id":"igoG0iBDIg3wCbvC"}
 {"address_txt":"HOSUR","address_latlng":{"lat":12.7409127,"lng":77.8252923},"_id":"jscWqhNMN4YSIqIa"}
 {"address_txt":"MADANAPALLI","address_latlng":{"lat":13.5603491,"lng":78.50360649999999},"_id":"k2cfmJuOJ0ml7Wsh"}
@@ -202,6 +204,7 @@
 {"address_txt":"ALAMPUR","address_latlng":{"lat":15.8843491,"lng":78.1193823},"_id":"sGP6TTYlOaNpyOLK"}
 {"address_txt":"VELDURTHI","address_latlng":{"lat":15.5508726,"lng":77.9310283},"_id":"sWXbfmPMleNQ2HAu"}
 {"address_txt":"JAMMALAMADUGU","address_latlng":{"lat":14.8474197,"lng":78.3899108},"_id":"sesuuX1WYs0x8dgA"}
+{"address_txt":"GUNTAKAL","address_latlng":{"lat":15.1674091,"lng":77.37362379999999},"_id":"sh2RaO91ivmpR3L6"}
 {"address_txt":"CHENNAI","address_latlng":{"lat":13.0826802,"lng":80.2707184},"_id":"szqTor1xBXHLqwbc"}
 {"address_txt":"NAIDUPET","address_latlng":{"lat":13.9066043,"lng":79.8940483},"_id":"tbNIxnXR4kuOHULr"}
 {"address_txt":"PORUMAMILLA","address_latlng":{"lat":14.9994124,"lng":78.9915188},"_id":"toLhEu0QhFu45jnl"}
@@ -210,6 +213,7 @@
 {"address_txt":"MADAKASIRA","address_latlng":{"lat":13.9402793,"lng":77.2717168},"_id":"vI6cEZMrh98e0nbu"}
 {"address_txt":"KANAGANAPALLI","address_latlng":{"lat":14.4456854,"lng":77.5261129},"_id":"vpJPJdqrDaMW3DmA"}
 {"address_txt":"KOLAR","address_latlng":{"lat":13.1770316,"lng":78.2020387},"_id":"vtgi79ozBw1Mjr03"}
+{"address_txt":"NIMMANAPALLE","address_latlng":{"lat":13.5714548,"lng":78.6675305},"_id":"wGIh6guNF2VgpL0s"}
 {"address_txt":"MIRYALAGUDA","address_latlng":{"lat":16.8753106,"lng":79.56596329999999},"_id":"wL4QUu0a7axw5PYe"}
 {"address_txt":"ONGOLE","address_latlng":{"lat":15.5057232,"lng":80.049922},"_id":"wLu7aEUUYAvF2mg0"}
 {"address_txt":"CHILLAKUR","address_latlng":{"lat":14.1279145,"lng":79.8618833},"_id":"wTyLeX6yXyjQL8qJ"}

@@ -116,10 +116,12 @@ main.content {
   text-align: center;
 }
 
+#map {
+  height: 100%; width: 100%;
+}
 #heatmap {
   height: 100%; width: 100%;
 }
-
 #sign-out{
   position: absolute;
   top: 0;
@@ -200,4 +202,22 @@ h2.login{
 
 a.login{
   color: red;
+}
+
+#realization {
+  text-align: center;
+
+}
+#resbutton{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: darkgrey;
+}
+#today{
+
+    font-size: 50px;
+    color: red;
+}
+#day{
+    font-size: 30px;
 }

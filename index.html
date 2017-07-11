@@ -6,6 +6,7 @@
 	<link rel="import" href="sections/login.html">
 	<link rel="import" href="sections/heatmap_input.html">
 	<link rel="import" href="sections/heatmap_result.html">
+	<link rel="import" href="sections/realization.html">
 
 	<link rel="stylesheet" href="assets/css/variables.css">
 	<link rel="stylesheet" href="assets/css/nativize.css">
@@ -27,18 +28,25 @@
 		</header>
 		<div class="nav-item u-category-menu">
 			<h5 class="nav-category">
-				<img class="nav-icon" src="assets/svg/001-login.svg"></img>
+				<img class="nav-icon" src="assets/svg/login.svg"></img>
 				Login
 			</h5>
 			<button type="button" id="button-login" data-section="login" class="nav-button">Login</button>
 		</div>
 		<div class="nav-item u-category-windows">
 			<h5 class="nav-category">
-				<img class="nav-icon" src="assets/svg/002-map.svg"></img>
+				<img class="nav-icon" src="assets/svg/map.svg"></img>
 				Heatmap
 			</h5>
 			<button type="button" id="button-heatmap_input" data-section="heatmap_input" class="nav-button">Input</button>
 			<button type="button" id="button-heatmap" data-section="heatmap" class="nav-button">Result</button>
+		</div>
+		<div class="nav-item u-category-menu">
+			<h5 class="nav-category">
+				<img class="nav-icon" src="assets/svg/coins.svg"></img>
+				Realization
+			</h5>
+			<button type="button" id="button-realization" data-section="realization" class="nav-button">Avg Realization</button>
 		</div>
 		<div style="height: 20px; margin-top: 1rem; background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #0000ff);"></div>
 
@@ -62,6 +70,7 @@ require('./renderer.js');
 <script type="text/javascript" src="./assets/login.js"></script>
 <script type="text/javascript" src="./assets/js/heatmap_input.js"></script>
 <script type="text/javascript" src="./assets/js/heatmap_create.js"></script>
+<script type="text/javascript" src="./assets/js/realization.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9Hwdql_NQZJhdV1u5V6syNsRUHVtCFWM&callback=initMap"></script>
 
 </html>

@@ -16,7 +16,7 @@ function createWindow () {
 	mainWindow = new BrowserWindow({width: 850, height: 700});
 
 	mainWindow.maximize();
-	mainWindow.setMenu(null);
+	// mainWindow.setMenu(null);
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(url.format({

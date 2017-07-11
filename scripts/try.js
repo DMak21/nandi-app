@@ -1,3 +1,3 @@
-const get_data = require('./get_data');
+const get_data = require('./get_realization');
 
-get_data('01/01/2017', '15/01/2017', 'T0058', 'T0058').then((res)=>{console.log(res);});
+get_data('T0058', 'T0058').then((res)=>{console.log(res);});

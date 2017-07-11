@@ -50,6 +50,10 @@ function create_heatmap() {
 		}
 
 		console.log(username,password,from_date,to_date,cem_type,dis_pen);
+
+		document.getElementById('heatmap_loader').style.display = 'block';
+		document.getElementById('map').style.display = 'none';
+		
 		add_markers(username,password,from_date,to_date,cem_type,dis_pen);
 	}
 	else{

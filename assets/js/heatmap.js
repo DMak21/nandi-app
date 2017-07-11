@@ -13,7 +13,7 @@ function initMap() {
 	markers = [];
 	infowindow = new google.maps.InfoWindow();
 
-	map = new google.maps.Map(document.getElementById('heatmap'), {
+	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 8,
 		center: new google.maps.LatLng(14.681888, 77.600591),
 		mapTypeId: 'terrain'
@@ -64,6 +64,9 @@ async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
 	console.log(data4);
 	let max = Math.max.apply(Math,data4.map(function(b){return b.weight;}));
 	let min = Math.min.apply(Math,data4.map(function(b){return b.weight;}));
+
+	document.getElementById('heatmap_loader').style.display = 'none';
+	document.getElementById('map').style.display = 'block';
 
 	for (var i = data4.length - 1; i >= 0; i--) {
 		let weight = data4[i].weight;
