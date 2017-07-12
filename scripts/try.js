@@ -1,3 +1,3 @@
-const get_data = require('./get_realization');
+// const geocode = require('./geocode');
 
-get_data('T0058', 'T0058').then((res)=>{console.log(res);});
+// geocode({address_txt: 'PEAPALLY'}).then((res)=>{console.log(res);});

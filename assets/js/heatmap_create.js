@@ -49,7 +49,7 @@ function create_heatmap() {
 			dis_pen += 2;
 		}
 
-		console.log(username,password,from_date,to_date,cem_type,dis_pen);
+		// console.log(username,password,from_date,to_date,cem_type,dis_pen);
 
 		document.getElementById('heatmap_loader').style.display = 'block';
 		document.getElementById('map').style.display = 'none';

@@ -39,17 +39,23 @@
 {"address_txt":"SRISAILAM","address_latlng":{"lat":16.0732748,"lng":78.8687291},"_id":"9pgEC1laTpofOw1D"}
 {"address_txt":"GIDDALURU","address_latlng":{"lat":15.3763583,"lng":78.9250862},"_id":"AAZNw1x8qxfWFhu8"}
 {"address_txt":"BAGALKOT","address_latlng":{"lat":16.1357079,"lng":75.62080879999999},"_id":"AMbouPpHEhb1Xvb2"}
+{"address_txt":"PEDDAPANJANI","address_latlng":{"lat":13.3070863,"lng":78.6865903},"_id":"AZQuaIef2p5SzyiA"}
 {"address_txt":"CHILAKALURIPET","address_latlng":{"lat":16.0924301,"lng":80.1623948},"_id":"AfE9DVRyrz74RXMK"}
 {"address_txt":"NANDYAL","address_latlng":{"lat":15.4785694,"lng":78.4830934},"_id":"Apm867XGHWSgebhi"}
+{"address_txt":"JEDCHERLA","address_latlng":{"lat":16.7625592,"lng":78.1393397},"_id":"B6Sgxha5ULkvPxau"}
 {"address_txt":"PICHATUR","address_latlng":{"lat":13.3991349,"lng":79.74138959999999},"_id":"BPaSA9GTZy02nkbi"}
+{"address_txt":"SHETTUR","address_latlng":{"lat":9.4051109,"lng":77.48023529999999},"_id":"BbIJTQ2neTAOLWv0"}
 {"address_txt":"CHITTOOR","address_latlng":{"lat":13.217176,"lng":79.1003289},"_id":"BmipyimWYKi1Br3Q"}
 {"address_txt":"VIJAYAWADA","address_latlng":{"lat":16.5061743,"lng":80.6480153},"_id":"CIF22t81NHfEW1v5"}
 {"address_txt":"JUPADU BUNGALOW","address_latlng":{"lat":15.7756106,"lng":78.05600539999999},"_id":"Cmi154SSTKFKBMHv"}
 {"address_txt":"PUTLUR","address_latlng":{"lat":13.1177839,"lng":79.93885709999999},"_id":"CnsdSkGoavl6t2Sf"}
 {"address_txt":"GANDLAPENTA","address_latlng":{"lat":14.0959658,"lng":78.271627},"_id":"CtmYd7CdOdcmS6Dc"}
+{"address_txt":"KAVALI","address_latlng":{"lat":14.9131806,"lng":79.9929798},"_id":"CyE2AsSoLohSsg7R"}
 {"address_txt":"KALUVOYA","address_latlng":{"lat":14.5129543,"lng":79.4099},"_id":"DG7LlgGPIfGr0HZK"}
 {"address_txt":"PENUGONDA","address_latlng":{"lat":16.6547241,"lng":81.74451669999999},"_id":"DO5iDPg6Fq4rjDNI"}
+{"address_txt":"ROMPICHERLA","address_latlng":{"lat":16.2097034,"lng":79.9087468},"_id":"DdwjRgFihhBIpQVe"}
 {"address_txt":"AMBERNATH","address_latlng":{"lat":19.1825167,"lng":73.19260229999999},"_id":"Dt4Wp8TbKHb9guC2"}
+{"address_txt":"BANDI ATMAKUR","address_latlng":{"lat":15.5827941,"lng":78.52349029999999},"_id":"F77XTCWNgi3cfaqt"}
 {"address_txt":"NELLORE","address_latlng":{"lat":14.4425987,"lng":79.98645599999999},"_id":"FJDEdO4BYKGlmcXp"}
 {"address_txt":"REPALLE","address_latlng":{"lat":16.0174248,"lng":80.82947469999999},"_id":"G3gNDcJ7DAMvqvhD"}
 {"address_txt":"VEMPALLE","address_latlng":{"lat":14.3661521,"lng":78.45855999999999},"_id":"GZxqQ5BbAkPHE2FA"}
@@ -139,9 +145,12 @@
 {"address_txt":"MADHAVARAM","address_latlng":{"lat":13.147819,"lng":80.2309861},"_id":"asEQst6HD0nlxHd3"}
 {"address_txt":"PHIRANGIPURAM","address_latlng":{"lat":16.2890087,"lng":80.2627973},"_id":"asmnIK9BAX6kKS0T"}
 {"address_txt":"CALICUT","address_latlng":{"lat":11.2587531,"lng":75.78041},"_id":"b0qFdfa3OEAUbtDR"}
+{"address_txt":"RAPTADU","address_latlng":{"lat":14.6158174,"lng":77.60635409999999},"_id":"b8kXXO9CxMr0feUd"}
 {"address_txt":"TADEPALLIGUDEM","address_latlng":{"lat":16.8138415,"lng":81.521241},"_id":"bd3qaHPBUKgoexMY"}
 {"address_txt":"B.KOTHAKOTA","address_latlng":{"lat":13.657554,"lng":78.2625728},"_id":"biQSdtBX7kI2Kb6w"}
+{"address_txt":"SADUM","address_latlng":{"lat":13.5476991,"lng":78.90748459999999},"_id":"bzjzoRL172TOvVC1"}
 {"address_txt":"MARRIPADU","address_latlng":{"lat":14.6414866,"lng":79.8247719},"_id":"cHVrCR5FgM4CEDPP"}
+{"address_txt":"DAGADARTHI","address_latlng":{"lat":14.671485,"lng":79.93466029999999},"_id":"cbR5iYdoJBAiJ2mj"}
 {"address_txt":"TADPATRI","address_latlng":{"lat":14.9070274,"lng":78.0092703},"_id":"cnnQtsOtpQS8TMnc"}
 {"address_txt":"BAPATLA","address_latlng":{"lat":15.9058966,"lng":80.4715866},"_id":"dhYmS72E3QyWkQbl"}
 {"address_txt":"KALYANDURG","address_latlng":{"lat":14.5506321,"lng":77.10871759999999},"_id":"ds7stYVExVdnc6m2"}
@@ -156,6 +165,7 @@
 {"address_txt":"NUZVID","address_latlng":{"lat":16.7849906,"lng":80.8488498},"_id":"f7QqssaVjpYBttLQ"}
 {"address_txt":"SHANTAPURAM","address_latlng":{"lat":25.5293499,"lng":81.8538539},"_id":"f7xSVTnoQYim57Xd"}
 {"address_txt":"COIMBATORE","address_latlng":{"lat":11.0168445,"lng":76.9558321},"_id":"fPAH4fEZK3IJ405A"}
+{"address_txt":"NANDIKOTHKUR","address_latlng":{"lat":15.8555925,"lng":78.26458869999999},"_id":"fRcxpcCsiN2kaK0A"}
 {"address_txt":"DUVVUR","address_latlng":{"lat":14.8431767,"lng":78.6534079},"_id":"fppuEocmnsb6vsCI"}
 {"address_txt":"PUTHALAPATTU","address_latlng":{"lat":13.3843417,"lng":79.0828492},"_id":"gOTuy48segVcdIMK"}
 {"address_txt":"NARASARAOPET","address_latlng":{"lat":16.2353506,"lng":80.0479039},"_id":"gRnweensNvkvhI4r"}
@@ -163,14 +173,18 @@
 {"address_txt":"KUPPAM","address_latlng":{"lat":12.7470314,"lng":78.33301569999999},"_id":"gboJhaSJoynSSEzf"}
 {"address_txt":"DHONE","address_latlng":{"lat":15.395984,"lng":77.8727193},"_id":"gyZQWqGjIUxAyrmG"}
 {"address_txt":"SRIRANGARAJAPURAM","address_latlng":{"lat":14.1670227,"lng":79.0899245},"_id":"h0v9Zo1URJTlD9L1"}
+{"address_txt":"NEYVELI","address_latlng":{"lat":11.5432364,"lng":79.47601329999999},"_id":"hM9p5uHdaevwC9pn"}
+{"address_txt":"BOGOLE","address_latlng":{"lat":14.7373436,"lng":79.9584397},"_id":"hMlo1Gk2koMjHIJa"}
 {"address_txt":"KUNNAMKULAM","address_latlng":{"lat":10.6515875,"lng":76.07109950000002},"_id":"hc6XH5PtieuIoMtS"}
 {"address_txt":"MAHABOOB NAGAR","address_latlng":{"lat":16.7375089,"lng":78.0081221},"_id":"hkHhHX1RKUDaOpAe"}
 {"address_txt":"MADURAI","address_latlng":{"lat":9.9252007,"lng":78.1197754},"_id":"huifpAOKayVW63CO"}
 {"address_txt":"KONDAPURAM","address_latlng":{"lat":14.7757134,"lng":78.1949157},"_id":"i4fwEJDTRwy7PB3w"}
 {"address_txt":"PAMULAPADU","address_latlng":{"lat":15.8395598,"lng":78.4908221},"_id":"i92D2b24xDBg0d7u"}
+{"address_txt":"DORNIPADU","address_latlng":{"lat":15.2055555,"lng":78.44819559999999},"_id":"iDiHKWCMsGUPyoz2"}
 {"address_txt":"GUDUR","address_latlng":{"lat":14.1463188,"lng":79.8503887},"_id":"iIp9f3xlXiFODB54"}
 {"address_txt":"ARDHAVEEDU","address_latlng":{"lat":15.6746632,"lng":78.95993469999999},"_id":"ieOONh27zAZQhnwX"}
 {"address_txt":"GOPAVARAM","address_latlng":{"lat":16.8180698,"lng":80.96914749999999},"_id":"igoG0iBDIg3wCbvC"}
+{"address_txt":"THOTAMBEDU","address_latlng":{"lat":13.7168036,"lng":79.72316119999999},"_id":"j4KCAQk2JFlGhlfM"}
 {"address_txt":"HOSUR","address_latlng":{"lat":12.7409127,"lng":77.8252923},"_id":"jscWqhNMN4YSIqIa"}
 {"address_txt":"MADANAPALLI","address_latlng":{"lat":13.5603491,"lng":78.50360649999999},"_id":"k2cfmJuOJ0ml7Wsh"}
 {"address_txt":"SINGANAMALA","address_latlng":{"lat":14.8000291,"lng":77.717308},"_id":"k6niYEW8Rmct6LPT"}
@@ -196,6 +210,7 @@
 {"address_txt":"ALLAGADDA","address_latlng":{"lat":15.1344838,"lng":78.5031721},"_id":"pZMmXAMDKhYygFez"}
 {"address_txt":"RAJAHMUNDRY","address_latlng":{"lat":17.0005383,"lng":81.8040345},"_id":"pgvopSNlOkNQwb3m"}
 {"address_txt":"SULLURPETA","address_latlng":{"lat":13.70215,"lng":80.01807170000001},"_id":"qAuovqgU40YmNKHB"}
+{"address_txt":"SATYAVEDU","address_latlng":{"lat":13.4322706,"lng":79.9612368},"_id":"qBAs2ZOjRHkYdVnB"}
 {"address_txt":"VEDURU KUPPAM","address_latlng":{"lat":13.4514598,"lng":79.3212058},"_id":"rH2zz416P7jJNe5O"}
 {"address_txt":"RENIGUNTA","address_latlng":{"lat":13.6343426,"lng":79.5112406},"_id":"rNXNvUuPt0fIDZew"}
 {"address_txt":"DAVANGERE","address_latlng":{"lat":14.4663438,"lng":75.9238397},"_id":"rNyXOntcCyC0V25x"}
@@ -206,9 +221,11 @@
 {"address_txt":"JAMMALAMADUGU","address_latlng":{"lat":14.8474197,"lng":78.3899108},"_id":"sesuuX1WYs0x8dgA"}
 {"address_txt":"GUNTAKAL","address_latlng":{"lat":15.1674091,"lng":77.37362379999999},"_id":"sh2RaO91ivmpR3L6"}
 {"address_txt":"CHENNAI","address_latlng":{"lat":13.0826802,"lng":80.2707184},"_id":"szqTor1xBXHLqwbc"}
+{"address_txt":"PALGHAR","address_latlng":{"lat":19.6935581,"lng":72.76551839999999},"_id":"t2YL0iL1CsqJ9qLa"}
 {"address_txt":"NAIDUPET","address_latlng":{"lat":13.9066043,"lng":79.8940483},"_id":"tbNIxnXR4kuOHULr"}
 {"address_txt":"PORUMAMILLA","address_latlng":{"lat":14.9994124,"lng":78.9915188},"_id":"toLhEu0QhFu45jnl"}
 {"address_txt":"VAYALPAD","address_latlng":{"lat":13.6374524,"lng":78.6313624},"_id":"tzHZlKQGwnBRi9Sa"}
+{"address_txt":"VISAKHAPATNAM","address_latlng":{"lat":17.6868159,"lng":83.2184815},"_id":"u6QtPVuNNQNsGmJ7"}
 {"address_txt":"D.HERIHAL","address_latlng":{"lat":15.0096592,"lng":76.8379942},"_id":"uzYZXBAdFMogj34H"}
 {"address_txt":"MADAKASIRA","address_latlng":{"lat":13.9402793,"lng":77.2717168},"_id":"vI6cEZMrh98e0nbu"}
 {"address_txt":"KANAGANAPALLI","address_latlng":{"lat":14.4456854,"lng":77.5261129},"_id":"vpJPJdqrDaMW3DmA"}

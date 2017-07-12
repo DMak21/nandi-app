@@ -55,15 +55,17 @@ function remove_all_markers() {
 async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
 	remove_all_markers();
 	let data = await get_data(user, pass, from_date, to_date);
-	console.log(data);
+	// console.log(data);
 	let data2 = manipulate_data(data, cem_type, dis_pen);
-	console.log(data2);
+	// console.log(data2);
 	let data3 = limit_data(data2);
-	console.log(data3);
+	// console.log(data3);
 	let data4 = await local_geocode(data3);
-	console.log(data4);
+	// console.log(data4);
 	let max = Math.max.apply(Math,data4.map(function(b){return b.weight;}));
 	let min = Math.min.apply(Math,data4.map(function(b){return b.weight;}));
+	document.getElementById('min').innerText = min.toString();
+	document.getElementById('max').innerText = max.toString();
 
 	document.getElementById('heatmap_loader').style.display = 'none';
 	document.getElementById('map').style.display = 'block';
@@ -73,7 +75,7 @@ async function add_markers(user, pass, from_date, to_date, cem_type, dis_pen) {
 		let address_latlng = data4[i].address_latlng;
 		let address_txt = data4[i].address_txt;
 
-		if (weight != 0) {
+		if (weight != 0 && address_latlng !== undefined) {
 			add_marker(address_txt, address_latlng, weight, max, min);
 		}
 	}

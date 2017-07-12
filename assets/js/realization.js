@@ -15,10 +15,10 @@ async function show_realization() {
 	} 
 
 	today = dd + '/' + mm + '/' + yyyy;
-	console.log(today);
+	// console.log(today);
 
 	res = await get_realization('T0058', 'T0058', today, today);
-	console.log(res);
+	// console.log(res);
 
 	var sum = 0;
 	for (var i = res.length - 1; i >= 0; i--) {
@@ -45,6 +45,4 @@ async function show_realization() {
 		var dayId = 'd_'+ a;
 		document.getElementById(dayId).innerText = dd + '/' + mm + ' - ' + avg.toFixed(2);
 	}
-	
-
 }

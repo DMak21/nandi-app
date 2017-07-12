@@ -25,6 +25,8 @@ npm start
 
 ![alt-tag](screenshots/3.jpg)
 
+![alt-tag](screenshots/4.jpg)
+
 ## License
 
 [MIT](LICENSE.md)

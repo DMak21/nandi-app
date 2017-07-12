@@ -16,11 +16,14 @@ async function local_geocode(js_array) {
 			js_array[i].address_latlng = doc[0].address_latlng;
 		}
 		else {
+			// console.log(js_array[i].address_txt);
 			await geocode(js_array[i]);
+			// console.log(js_array[i]);
 			if (js_array[i].address_latlng !== undefined) {
 				db.insert({address_txt: js_array[i].address_txt, address_latlng: js_array[i].address_latlng});
 			}
 		}
+		// console.log(js_array[i].address_latlng);
 		await promises.push(new Promise((res) => {
 			res(js_array[i]);
 		}));
